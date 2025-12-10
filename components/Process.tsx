@@ -189,7 +189,7 @@ const Process: FC = () => {
               className="absolute w-full h-full md-radius-override pointer-events-none"
               style={{ transform: `rotate(-${rotation}deg)` }}
             >
-                            Select-String -Path .\**\* -Pattern "@layer utilities" -SimpleMatch -List{steps.map((_, idx) => (
+              {steps.map((_, idx) => (
                 <div
                   key={`marker-${idx}`}
                   className="absolute top-1/2 left-1/2 w-0 h-0"
